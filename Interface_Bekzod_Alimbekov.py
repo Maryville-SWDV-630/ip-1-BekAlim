@@ -1,3 +1,4 @@
+# Teams Class
 class Teams:
     def __init__(self,members):
         self.__myTeam = members
@@ -10,6 +11,7 @@ class Teams:
     def __next__(self):
         return next(self.iterator)
 
+# Main Function
 def main():
     classmates = Teams(['John','Steve','Tim'])
 
