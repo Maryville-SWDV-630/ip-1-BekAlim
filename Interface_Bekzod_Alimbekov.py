@@ -1,7 +1,7 @@
 class Teams:
     def __init__(self,members):
         self.__myTeam = members
-    #def __len__(self):
+    #def __len__(self):   <-- Disabled to test the if Method exist in #3
     #    return len(self.__myTeam)
     def __contains__(self,member):
         return member in self.__myTeam
@@ -19,8 +19,8 @@ def main():
 
     # 2 Using __iter__ protocol
     classmates.__iter__()
-    #print(classmates.__next__())
-    #print(classmates.__next__())
+    print(classmates.__next__()) # Iteration to print Member 1
+    print(classmates.__next__()) # Iteration to print Member 2
 
     # 3 Determining if Class classmates has __len__ method
     try:
